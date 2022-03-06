@@ -1,0 +1,15 @@
+ANSWER #1:
+SELECT * FROM country
+WHERE country LIKE 'A%a';
+
+ANSWER #2:
+SELECT * FROM country
+WHERE country LIKE '_____%n';
+
+ANSWER #3:
+SELECT title FROM film
+WHERE title ILIKE '%t%t%t%t%';
+
+ANSWER #4:
+SELECT * FROM film
+WHERE (title LIKE 'C%') AND (film.length > 90) AND (film.rental_rate = 2.99);
